@@ -4,9 +4,9 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>Insert title here</title>
+<title>test gerant jsp spring</title>
 </head>
 <body>
-
+	<p>ça marche !!!!!</p>
 </body>
 </html>
