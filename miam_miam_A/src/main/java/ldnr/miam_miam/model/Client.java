@@ -17,9 +17,12 @@ public class Client {
 	private String login;
 	private String password; //TODO: Salt/hash before persisting
 	
+	//Maybe create a dedicated address object
 	private String postalCode;
-	private String address;//Maybe create an address object instead of a mere String
+	private String address;
 	
+	private String telephoneNumber; //TODO: Ensure the telephone number follows a strict pattern
+	private String emailAddress; //TODO : Ensure the emailAddress is valid
 	//@OneToMany
 	private List<Commande> commandes;
 

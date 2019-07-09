@@ -13,6 +13,8 @@ public class Commande {
 
 	private Double price;
 	private Boolean isDelivered;
+	private Boolean toDeliver;
+	private String dateTime; //TODO : ensure it is set only once with java.time.DateTime
 	// @ManyToMany ?
 	private List<Menu> menus;
 	private List<Pizza> pizzas;
@@ -32,6 +34,14 @@ public class Commande {
 
 	public void setPrice(Double price) {
 		this.price = price;
+	}
+
+	public Boolean getToDeliver() {
+		return toDeliver;
+	}
+
+	public void setToDeliver(Boolean toDeliver) {
+		this.toDeliver = toDeliver;
 	}
 
 	public Boolean getIsDelivered() {
@@ -65,5 +75,14 @@ public class Commande {
 	public void setBoissons(List<Boisson> boissons) {
 		this.boissons = boissons;
 	}
+
+	public String getDateTime() {
+		return dateTime;
+	}
+
+	public void setDateTime(String dateTime) {
+		this.dateTime = dateTime;
+	}
+	
 
 }
