@@ -1,4 +1,4 @@
-package ldnr.miam_miam.vue.gerant;
+package ldnr.miam_miam.controller.gerant;
 
 import org.springframework.web.bind.annotation.RequestMapping;
 
