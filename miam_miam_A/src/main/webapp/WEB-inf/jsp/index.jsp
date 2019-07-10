@@ -15,6 +15,6 @@
      
          
       <a href="${pageContext.request.contextPath}/personList">Person List</a>  
-       
+       <a href="${pageContext.request.contextPath}/gerant">Gerant</a>  
    </body>
 </html>
