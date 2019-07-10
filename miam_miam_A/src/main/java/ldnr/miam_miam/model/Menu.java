@@ -1,16 +1,16 @@
 package ldnr.miam_miam.model;
 
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
-import javax.persistence.Id;
+//import javax.persistence.Entity;
+//import javax.persistence.GeneratedValue;
+//import javax.persistence.GenerationType;
+//import javax.persistence.Id;
 
-@Entity
+//@Entity
 public class Menu {
 
 	//Note : Menus can only include one pizza and one drink right now
 	//May change to List<Pizza> and List<Boisson>
-	@Id
+	/*@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private Integer id;
 	
@@ -18,7 +18,7 @@ public class Menu {
 	private Double price;
 	
 	//@DDB relationship : OneToMany/ManyToOne
-	private Pizza pizza;
+	/*private Pizza pizza;
 	
 	private Boisson boisson;
 	
@@ -51,7 +51,7 @@ public class Menu {
 	}
 	public void setPrice(Double price) {
 		this.price = price;
-	}
+	}*/
 	
 	
 }
