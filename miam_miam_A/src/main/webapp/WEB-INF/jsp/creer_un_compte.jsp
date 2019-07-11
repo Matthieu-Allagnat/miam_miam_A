@@ -7,7 +7,7 @@
 <title>Creer un Compte</title>
 </head>
 <body>
-	<form action="carte">
+	<form action="creation_compte_client">
 		<label for="firstName">Firstname</label> <input type="text" name="firstName"><br>
 		<label for="lastName">Lastname</label> <input type="text" name="lastName"><br>
 		<label for="address">address</label> <input type="text" name="address"><br>

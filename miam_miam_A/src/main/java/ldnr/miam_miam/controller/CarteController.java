@@ -14,7 +14,8 @@ import ldnr.miam_miam.model.Pizza;
 public class CarteController {
 	
 	private static List<Pizza> pizzas = new ArrayList<Pizza>();
-	 
+	
+	
     static {
         pizzas.add(new Pizza("margarita", "s", 12 ));
         pizzas.add(new Pizza("4 fromages", "xl", 15));

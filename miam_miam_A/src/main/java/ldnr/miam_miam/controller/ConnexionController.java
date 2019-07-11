@@ -7,6 +7,7 @@ import org.springframework.web.bind.annotation.RequestMethod;
 
 @Controller
 public class ConnexionController {
+
 	@RequestMapping(value = { "/connexion" }, method = RequestMethod.GET)
 	public String index(Model model) {
 

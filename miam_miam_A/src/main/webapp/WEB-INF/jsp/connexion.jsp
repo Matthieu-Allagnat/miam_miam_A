@@ -7,7 +7,7 @@
 <title>Connexion</title>
 </head>
 <body>
-	<form action="carte">
+	<form action="connexion_client">
 	<label for="login">Login</label>
 	<input type="text" name="login">
 	<label for="pass">Password</label>
