@@ -29,6 +29,25 @@
 				</tr>
 			</c:forEach>
 		</table>
+	</div><br>
+	
+		<h1>Boissons</h1>
+
+	<br />
+	<br />
+	<div>
+		<table border="1">
+			<tr>
+				<th>Boisson</th>
+				<th>Price</th>
+			</tr>
+			<c:forEach items="${boissons}" var="boisson">
+				<tr>
+					<td>${boisson.name}</td>
+					<td>${boisson.price}</td>
+				</tr>
+			</c:forEach>
+		</table>
 	</div>
 </body>
 </html>

@@ -8,6 +8,7 @@ import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 
+import ldnr.miam_miam.model.Boisson;
 import ldnr.miam_miam.model.Pizza;
 
 @Controller
@@ -21,10 +22,20 @@ public class CarteController {
         pizzas.add(new Pizza("buffalo", "m", 13));
         pizzas.add(new Pizza("thon", "xl", 16));
     }
+    
+    private static List<Boisson> boissons = new ArrayList<Boisson>();
+	 
+    static {
+    	boissons.add(new Boisson("coca", "3.50"));
+    	boissons.add(new Boisson("orangina", "3.00"));
+    	boissons.add(new Boisson("vittel", "2.00"));
+    	boissons.add(new Boisson("biere", "4.50"));
+    }
 	
 	@RequestMapping(value = { "/carte" }, method = RequestMethod.GET)
     public String index(Model model) {
 		model.addAttribute("pizzas", pizzas);
+		model.addAttribute("boissons", boissons);
  
         return "carte";
     }
