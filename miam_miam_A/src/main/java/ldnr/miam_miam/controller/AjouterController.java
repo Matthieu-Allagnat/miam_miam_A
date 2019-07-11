@@ -15,12 +15,7 @@ public class AjouterController {
 		return "ajouter_pizza";
 	}
 	
-	@RequestMapping(value = { "/ajouter_menu" }, method = RequestMethod.GET)
-	public String index2(Model model) {
-		
-
-		return "ajouter_menu";
-	}
+	
 	
 	@RequestMapping(value = { "/ajouter_boisson" }, method = RequestMethod.GET)
 	public String index3(Model model) {
