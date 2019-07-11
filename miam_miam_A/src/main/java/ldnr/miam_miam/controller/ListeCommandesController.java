@@ -9,7 +9,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 
 import ldnr.miam_miam.model.Commande;
-import ldnr.miam_miam.model.Pizza;
+
 
 @Controller
 public class ListeCommandesController {
@@ -23,9 +23,9 @@ public class ListeCommandesController {
         commandes.add(new Commande(6, 60.00, false, true, "13_06_2019", "menu calzone", "fruit de mer", "evian" ));
     }
 	
-	@RequestMapping(value = { "/liste_commandes" }, method = RequestMethod.GET)
+	@RequestMapping(value = {"/liste_commandes" }, method = RequestMethod.GET)
     public String index(Model model) {
-		model.addAttribute("pizzas", commandes);
+		model.addAttribute("commandes", commandes);
  
         return "liste_commandes";
     }

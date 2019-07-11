@@ -1,6 +1,7 @@
 package ldnr.miam_miam.model;
 
-import java.util.List;
+
+
 
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
@@ -10,7 +11,6 @@ public class Commande {
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private Integer id;
-
 	private Double price;
 	private Boolean isDelivered;
 	private Boolean toDeliver;
@@ -27,16 +27,18 @@ public class Commande {
 		
 	}
 	
-	public Commande(Integer id, Double price, Boolean isDelivred, Boolean toDeliver, String dateTime, String menu, String pizza, String boisson) {
+	public Commande(Integer id, Double price, Boolean isDelivered, Boolean toDeliver, String dateTime, String menu, String pizza, String boisson) {
 		this.id=id;
 		this.price=price;
-		this.isDelivered=isDelivred;
+		this.isDelivered=isDelivered;
 		this.toDeliver=toDeliver;
 		this.dateTime=dateTime;
 		this.menu=menu;
 		this.pizza=pizza;
 		this.boisson=boisson;
 	}
+	
+	
 
 	public String getMenu() {
 		return menu;

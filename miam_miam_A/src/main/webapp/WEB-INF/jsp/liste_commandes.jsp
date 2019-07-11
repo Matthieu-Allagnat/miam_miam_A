@@ -5,7 +5,7 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>Insert title here</title>
+<title>Liste commandes</title>
 </head>
 <body>
 	<h1>Commandes</h1>
@@ -13,27 +13,28 @@
 	<br />
 	<br />
 	<div>
+		
 		<table border="1">
 			<tr>
-				<th>id</th>
+				<th>Numero</th>
 				<th>price</th>
 				<th>isDelivred</th>
 				<th>toDeliver</th>
 				<th>Date</th>
 				<th>menu</th>
 				<th>Pizza</th>
-				<th>boisson</th>
+				<th>Boisson</th>
 			</tr>
-			<c:forEach items="${pizzas}" var="pizza">
+			<c:forEach items="${commandes}" var="commande">
 				<tr>
-					<td>${commandes.id}</td>
-					<td>${commandes.price}</td>
-					<td>${commandes.isDelivred}</td>
-					<td>${commandes.toDeliver}</td>
-					<td>${commandes.date}</td>
-					<td>${commandes.menu}</td>
-					<td>${commandes.pizza}</td>
-					<td>${commandes.boisson}</td>
+					<td>${commande.id}</td>
+					<td>${commande.price}</td>
+					<td>${commande.isDelivered}</td>
+					<td>${commande.toDeliver}</td>
+					<td>${commande.dateTime}</td>
+					<td>${commande.menu}</td>
+					<td>${commande.pizza}</td>
+					<td>${commande.boisson}</td>
 				</tr>
 			</c:forEach>
 		</table>
