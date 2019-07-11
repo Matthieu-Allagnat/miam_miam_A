@@ -5,7 +5,7 @@ package ldnr.miam_miam.model;
 /*import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
-import javax.persistence.Id;
+import javax.persistence.Id;*/
 //import javax.persistence.OneToMany;*/
 
 //@Entity
@@ -54,7 +54,7 @@ public class Pizza {
 		this.size = size;
 	}
 
-	/*public List<IngredientSupplementaire> getSupplements() {
+	public List<IngredientSupplementaire> getSupplements() {
 		return supplements;
 	}
 
@@ -62,7 +62,7 @@ public class Pizza {
 		this.supplements = supplements;
 	}*/
 	
-
+	private Long id;
     private String name;
     private String size;
     private int price;
