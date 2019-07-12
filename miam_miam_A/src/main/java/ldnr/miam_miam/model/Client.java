@@ -26,7 +26,7 @@ public class Client {
 	private String address;
 	private String city;
 	
-	private String telephoneNumber; //TODO: Ensure the telephone number follows a strict pattern
+	private String phoneNumber; //TODO: Ensure the telephone number follows a strict pattern
 	private String emailAddress; //TODO : Ensure the emailAddress is valid
 	private int numeroCommande;
 	//@OneToMany
@@ -36,7 +36,7 @@ public class Client {
 		
 	}
 	
-	public Client(Integer id, String firstName, String lastName, String login, String password, String verifPassword, String postalCode, String address, String city, String telephoneNumber, String emailAddress, int numeroCommande) {
+	public Client(Integer id, String firstName, String lastName, String login, String password, String verifPassword, String postalCode, String address, String city, String phoneNumber, String emailAddress, int numeroCommande) {
 		this.id= id;
 		this.firstName=firstName;
 		this.LastName=lastName;
@@ -46,16 +46,14 @@ public class Client {
 		this.postalCode=postalCode;
 		this.address=address;
 		this.city=city;
-		this.telephoneNumber=telephoneNumber;
+		this.phoneNumber=phoneNumber;
 		this.emailAddress=emailAddress;
 		this.numeroCommande=numeroCommande;
 	}
 	
 	
 
-	public String getTelephoneNumber() {
-		return telephoneNumber;
-	}
+	
 
 	public String getFirstName() {
 		return firstName;
@@ -97,9 +95,7 @@ public class Client {
 		this.numeroCommande = numeroCommande;
 	}
 
-	public void setTelephoneNumber(String telephoneNumber) {
-		this.telephoneNumber = telephoneNumber;
-	}
+	
 
 	public String getEmailAddress() {
 		return emailAddress;
@@ -150,6 +146,16 @@ public class Client {
 	public void setAddress(String address) {
 		this.address = address;
 	}
+
+	public String getPhoneNumber() {
+		return phoneNumber;
+	}
+
+	public void setPhoneNumber(String phoneNumber) {
+		this.phoneNumber = phoneNumber;
+	}
+	
+	
 
 	/*public List<Commande> getCommandes() {
 		return commandes;

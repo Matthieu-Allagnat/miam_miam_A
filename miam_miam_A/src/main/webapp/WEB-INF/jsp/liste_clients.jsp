@@ -40,7 +40,7 @@
 					<td>${client.postalCode}</td>
 					<td>${client.address}</td>
 					<td>${client.city}</td>
-					<td>${client.telephoneNumber}</td>
+					<td>${client.phoneNumber}</td>
 					<td>${client.emailAddress}</td>
 					<td>${client.numeroCommande}</td>
 				</tr>
