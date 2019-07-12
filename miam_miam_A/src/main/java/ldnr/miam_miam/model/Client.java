@@ -1,11 +1,14 @@
 package ldnr.miam_miam.model;
 
+import javax.persistence.Entity;
+
 //import java.util.List;
 
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
 
+@Entity
 public class Client {
 
 	@Id
@@ -47,6 +50,7 @@ public class Client {
 		this.emailAddress=emailAddress;
 		this.numeroCommande=numeroCommande;
 	}
+	
 	
 
 	public String getTelephoneNumber() {
