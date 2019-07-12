@@ -1,4 +1,4 @@
-package ldnr.miam_miam.dbbController;
+package ldnr.miam_miam.controller;
 
 import java.util.List;
 

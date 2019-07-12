@@ -1,23 +1,28 @@
-package ldnr.miam_miam.dbbController;
+package ldnr.miam_miam.controller;
 
 
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.Id;
 import java.math.BigDecimal;
 
-/**
- * Created by jt on 1/10/17.
- */
-public class ProductForm {
-    private Long id;
+
+@Entity
+public  class Product {
+
+    @Id
+    @GeneratedValue
+    private Long _id;
     private String description;
     private BigDecimal price;
     private String imageUrl;
 
     public Long getId() {
-        return id;
+        return _id;
     }
 
     public void setId(Long id) {
-        this.id = id;
+        this._id = id;
     }
 
     public String getDescription() {

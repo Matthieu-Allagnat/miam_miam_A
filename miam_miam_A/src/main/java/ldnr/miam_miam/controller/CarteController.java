@@ -26,10 +26,11 @@ public class CarteController {
     private static List<Boisson> boissons = new ArrayList<Boisson>();
 	 
     static {
-    	boissons.add(new Boisson("coca", "3.50"));
-    	boissons.add(new Boisson("orangina", "3.00"));
-    	boissons.add(new Boisson("vittel", "2.00"));
-    	boissons.add(new Boisson("biere", "4.50"));
+		/*
+		 * boissons.add(new Boisson("coca", "3.50")); boissons.add(new
+		 * Boisson("orangina", "3.00")); boissons.add(new Boisson("vittel", "2.00"));
+		 * boissons.add(new Boisson("biere", "4.50"));
+		 */
     }
 	
 	@RequestMapping(value = { "/carte" }, method = RequestMethod.GET)

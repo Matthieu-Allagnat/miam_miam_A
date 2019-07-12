@@ -1,4 +1,4 @@
-package ldnr.miam_miam.dbbController;
+package ldnr.miam_miam.controller;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;

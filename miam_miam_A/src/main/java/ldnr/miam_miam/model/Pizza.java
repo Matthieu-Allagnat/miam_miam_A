@@ -1,14 +1,14 @@
 package ldnr.miam_miam.model;
 
+import javax.persistence.Entity;
+
 //import java.util.List;
 
-/*import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
-import javax.persistence.Id;*/
+import javax.persistence.Id;
 //import javax.persistence.OneToMany;*/
 
-//@Entity
+@Entity
 public class Pizza {
 	
 	/*@Id
@@ -61,7 +61,8 @@ public class Pizza {
 	public void setSupplements(List<IngredientSupplementaire> supplements) {
 		this.supplements = supplements;
 	}*/
-	
+	@Id
+	@GeneratedValue
 	private Long id;
     private String name;
     private String size;

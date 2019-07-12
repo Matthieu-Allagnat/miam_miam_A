@@ -5,7 +5,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.annotation.ComponentScan;
 
 @SpringBootApplication
-@ComponentScan(basePackages= {"ldnr.miam_miam"})
+@ComponentScan(basePackages = { "ldnr.miam_miam" })
 public class MiamMiamAApplication {
 
 	public static void main(String[] args) {

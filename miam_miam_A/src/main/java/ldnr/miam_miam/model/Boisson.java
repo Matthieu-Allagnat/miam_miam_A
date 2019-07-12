@@ -1,11 +1,10 @@
 package ldnr.miam_miam.model;
 
-//import javax.persistence.Entity;
-//import javax.persistence.GeneratedValue;
-//import javax.persistence.GenerationType;
-//import javax.persistence.Id;
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.Id;
 
-//@Entity
+@Entity
 public class Boisson {
 
 	/*@Id
@@ -33,15 +32,16 @@ public class Boisson {
 	public void setPrice(Double price) {
 		this.price = price;
 	}*/
+	
+	@Id
+	@GeneratedValue
+	private Long _id;
 	private String name;
 	private String price;
 	
-	public Boisson() {}
+	//public Boisson() {}
 	
-	public Boisson(String name, String price) {
-		this.name=name;
-		this.price=price;
-	}
+
 
 	public String getName() {
 		return name;
