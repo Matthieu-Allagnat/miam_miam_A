@@ -19,23 +19,7 @@ public class AjouterModifierSupprimerController {
 	PizzaRepository pizzaRepo;
 	@Autowired
 	BoissonRepository boissonRepo;
-	/*private static List<Pizza> pizzas = new ArrayList<Pizza>();
-	 
-    static {
-        pizzas.add(new Pizza("margarita", "s", 12 ));
-        pizzas.add(new Pizza("4 fromages", "xl", 15));
-        pizzas.add(new Pizza("buffalo", "m", 13));
-        pizzas.add(new Pizza("thon", "xl", 16));
-    }*/
-    
-  /*  private static List<Boisson> boissons = new ArrayList<Boisson>();
-	 
-    static {
-    	boissons.add(new Boisson("coca", "3.50"));
-    	boissons.add(new Boisson("orangina", "3.00"));
-    	boissons.add(new Boisson("vittel", "2.00"));
-    	boissons.add(new Boisson("biere", "4.50"));
-    }*/
+	
 	
 	@RequestMapping(value = { "/ajouter_modifier_supprimer" }, method = RequestMethod.GET)
     public String index(Model model) {
@@ -47,3 +31,20 @@ public class AjouterModifierSupprimerController {
         return "ajouter_modifier_supprimer";
     }
 }
+/*private static List<Pizza> pizzas = new ArrayList<Pizza>();
+
+static {
+    pizzas.add(new Pizza("margarita", "s", 12 ));
+    pizzas.add(new Pizza("4 fromages", "xl", 15));
+    pizzas.add(new Pizza("buffalo", "m", 13));
+    pizzas.add(new Pizza("thon", "xl", 16));
+}*/
+
+/*  private static List<Boisson> boissons = new ArrayList<Boisson>();
+ 
+static {
+	boissons.add(new Boisson("coca", "3.50"));
+	boissons.add(new Boisson("orangina", "3.00"));
+	boissons.add(new Boisson("vittel", "2.00"));
+	boissons.add(new Boisson("biere", "4.50"));
+}*/
