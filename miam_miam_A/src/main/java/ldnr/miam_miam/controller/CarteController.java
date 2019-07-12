@@ -17,7 +17,8 @@ public class CarteController {
 	
 	@Autowired
 	PizzaRepository pizzaRepo;
-	
+	@Autowired
+	BoissonRepository boissonRepo;
 	
 	/*private static List<Pizza> pizzas = new ArrayList<Pizza>();
 	 
@@ -28,19 +29,21 @@ public class CarteController {
         pizzas.add(new Pizza("thon", "xl", 16));
     }*/
     
-    private static List<Boisson> boissons = new ArrayList<Boisson>();
+  /*  private static List<Boisson> boissons = new ArrayList<Boisson>();
 	 
     static {
     	boissons.add(new Boisson("coca", "3.50"));
     	boissons.add(new Boisson("orangina", "3.00"));
     	boissons.add(new Boisson("vittel", "2.00"));
     	boissons.add(new Boisson("biere", "4.50"));
-    }
+    }*/
 	
 	@RequestMapping(value = { "/carte" }, method = RequestMethod.GET)
     public String index(Model model) {
 		
 		Iterable<Pizza> pizzas = pizzaRepo.findAll();
+		Iterable<Boisson> boissons = boissonRepo.findAll();
+		
 		model.addAttribute("pizzas", pizzas);
 		model.addAttribute("boissons", boissons);
  
