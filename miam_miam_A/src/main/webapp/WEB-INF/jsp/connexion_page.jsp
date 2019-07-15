@@ -7,21 +7,21 @@
 <title>Connexion</title>
 </head>
 <body>
-	<form action="carte">
+	<form action="connexion">
 	<label for="login">Login</label>
 	<input type="text" name="login">
-	<label for="pass">Password</label>
-	<input type="text" name="pass">
-		<input type="submit" value="Connexion client">
+	<label for="password">Password</label>
+	<input type="text" name="password">
+		<input type="submit" value="Connexion">
 	</form><br>
 	
-	<form action="gerant">
+	<!--  <form action="gerant">
 	<label for="login">Login</label>
 	<input type="text" name="login">
 	<label for="pass">Password</label>
 	<input type="text" name="pass">
 		<input type="submit" value="Connexion gerant">
-	</form><br>
+	</form><br>-->
 	
 	<form action="creer_un_compte">
 		<input type="submit" value="Creer un Compte">

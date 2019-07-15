@@ -28,6 +28,7 @@ public class ListeClientsController {
 	        return "liste_clients";
 	   }
 	 
+	 
 	 @RequestMapping("/creer_compte")
 	  public String index2(@ModelAttribute Client client, Model model) {
 	        
@@ -42,7 +43,7 @@ public class ListeClientsController {
 	        model.addAttribute("phoneNumber", client.getPhoneNumber());
 	        model.addAttribute("emailAddress", client.getEmailAddress());
 	        repo.save(client);
-	        return "carte";
+	        return "index";
 	   }
 	
 	

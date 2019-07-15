@@ -29,6 +29,7 @@ public class Client {
 	private String phoneNumber; //TODO: Ensure the telephone number follows a strict pattern
 	private String emailAddress; //TODO : Ensure the emailAddress is valid
 	private int numeroCommande;
+	private boolean gerant;
 	//@OneToMany
 	//private List<Commande> commandes;
 	
@@ -36,7 +37,7 @@ public class Client {
 		
 	}
 	
-	public Client(Integer id, String firstName, String lastName, String login, String password, String verifPassword, String postalCode, String address, String city, String phoneNumber, String emailAddress, int numeroCommande) {
+	public Client(Integer id, String firstName, String lastName, String login, String password, String verifPassword, String postalCode, String address, String city, String phoneNumber, String emailAddress, int numeroCommande, boolean gerant) {
 		this.id= id;
 		this.firstName=firstName;
 		this.LastName=lastName;
@@ -49,11 +50,20 @@ public class Client {
 		this.phoneNumber=phoneNumber;
 		this.emailAddress=emailAddress;
 		this.numeroCommande=numeroCommande;
+		this.gerant=gerant;
 	}
 	
 	
 
 	
+
+	public boolean isGerant() {
+		return gerant;
+	}
+
+	public void setGerant(boolean gerant) {
+		this.gerant = gerant;
+	}
 
 	public String getFirstName() {
 		return firstName;

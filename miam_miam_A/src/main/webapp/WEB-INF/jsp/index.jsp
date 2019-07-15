@@ -12,7 +12,7 @@
 	<form action="carte">
 		<input type="submit" value="Carte">
 	</form>
-	<form action="connexion">
+	<form action="connexion_page">
 		<input type="submit" value="Connexion">
 	</form>
 	<form action="nos_produits">
