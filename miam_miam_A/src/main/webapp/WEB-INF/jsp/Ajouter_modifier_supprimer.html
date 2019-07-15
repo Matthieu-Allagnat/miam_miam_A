@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="ajouter_modifier_supprimer.css">
+    <link rel="icon" type="image/png" href="img/pizza favicon.png">
+    <title>Ajouter Modifier Supprimer</title>
+</head>
+
+<body>
+
+    <header>
+
+        <h1> Bienvenue chez MiamMiam </h1>
+
+    </header>
+    <h2>Modifier ou supprimer une pizza</h2>
+    <section>
+            <form action="ajouter_pizza">
+                    <input type="submit" value="Ajouter Pizza">
+                </form>
+        <table>
+            <tr>
+                <th>Pizza</th>
+                <th>Prix</th>
+                <th>Ingredient1</th>
+                <th>Ingredient2</th>
+                <th>Ingredient3</th>
+                <th>Ingredient4</th>
+                <th>Ingredient5</th>
+                <th>Ingredient6</th>
+            </tr>
+
+            <br>
+
+
+            <c:forEach items="${boisson}" var="boisson">
+                <tr>
+
+                    <td>${pizza.name}</td>
+                    <td>${pizza.price}</td>
+                    <td id="ingredients">${pizza.ingredient1}</td>
+                    <td id="ingredients">${pizza.ingredient2}</td>
+                    <td id="ingredients">${pizza.ingredient3}</td>
+                    <td id="ingredients">${pizza.ingredient4}</td>
+                    <td id="ingredients">${pizza.ingredient5}</td>
+                    <td id="ingredients">${pizza.ingredient6}</td>
+
+                    <td><input type="button" value="Modifier"></td>
+                    <td><input type="button" value="Supprimer"></td>
+                    
+                </tr>
+            </c:forEach>
+
+        
+                    
+
+        </table>
+        
+  
+
+
+    </section>
+
+    <h2>Modifier ou supprimer une boisson</h2>
+  
+    <section>
+            <form action="ajouter_boisson">
+                    <input type="submit" value="Ajouter Boisson">
+                </form>
+        
+        <table>
+        
+            <tr>
+                <th>Boisson</th>
+                <th>Prix</th>
+
+            </tr>
+
+
+            <c:forEach items="${boisson}" var="boisson">
+                <tr>
+
+                    <td>${boisson.name}</td>
+                    <td>${boisson.price}</td>
+                    <td><input type="button" value="Modifier"></td>
+                    <td><input type="button" value="Supprimer"></td>
+                </tr>
+
+            </c:forEach>
+
+
+        </table>
+
+
+        
+
+
+    </section>
+
+    <footer>
+
+        <p>Icons made by <a href="https://www.freepik.com/" title="Freepik">Freepik</a> from <a
+                href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a> is licensed by <a
+                href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0" target="_blank">CC
+                3.0 BY</a></p>
+
+
+    </footer>
+
+
+</body>
+
+
+
+
+
+
+
+
+
+</html>

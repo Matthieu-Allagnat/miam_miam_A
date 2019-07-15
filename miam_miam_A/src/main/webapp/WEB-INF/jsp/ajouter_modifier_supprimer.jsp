@@ -4,9 +4,15 @@
 <!DOCTYPE html>
 <html>
 <head>
-<meta charset="UTF-8">
-<title>Ajouter Modifier Supprimer</title>
+
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="ajouter_modifier_supprimer.css">
+    <link rel="icon" type="image/png" href="img/pizza favicon.png">
+    <title>Ajouter Modifier Supprimer</title>
 </head>
+
 <body>
 	<h1>Pizzas</h1>
 

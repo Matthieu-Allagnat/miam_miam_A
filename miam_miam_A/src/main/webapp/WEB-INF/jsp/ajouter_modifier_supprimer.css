@@ -1,0 +1,64 @@
+
+body{
+
+    background-color: black;
+    border: 0px;
+    margin: 0px;
+    padding: 0px;
+}
+
+
+
+h1{
+
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 100px;
+    text-align: center;
+    color: aliceblue;
+    border: 0px;
+    margin: 0px;
+    padding: 30px;
+    
+
+}
+
+h2{color: aliceblue;
+    text-align: center;
+    margin-top: 100px;}
+
+
+section{
+    border: solid aliceblue 1px;
+    margin:100px;
+    margin-top:20px;
+    margin-bottom: 0px;
+    
+}
+table{border-spacing:10px;
+    
+    
+}
+
+
+th{color:aliceblue;
+    }
+
+td{border:solid grey 1px;
+color: aliceblue;
+;}
+
+form{margin: 0px;
+text-align: right;
+}
+
+form input{
+    width:200px;
+    background-color: lightblue;
+    height:40px;
+    text-align: center;
+}
+p{color:aliceblue}
+
+
+footer{position:relative;
+    top:700px;}
