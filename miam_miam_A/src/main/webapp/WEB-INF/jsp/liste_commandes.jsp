@@ -9,7 +9,7 @@
 </head>
 <body>
 	<h1>Commandes</h1>
-
+	<h2>//Note : doesn't actually read from the database</h2>
 	<br />
 	<br />
 	<div>

@@ -3,30 +3,40 @@ package ldnr.miam_miam.model;
 
 
 
+import java.util.List;
+
+import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
 
+@Entity
 public class Commande {
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private Integer id;
-	private Double price;
-	private Boolean isDelivered;
-	private Boolean toDeliver;
-	private String dateTime; //TODO : ensure it is set only once with java.time.DateTime
+	private Double price = 0D;
+	private Boolean isDelivered = false;
+	private Boolean toDeliver = false;
+	private String dateTime = "placeholder dateTIme"; //TODO : ensure it is set only once with java.time.DateTime
 	// @ManyToMany ?
-	/*private List<Menu> menus;
-	private List<Pizza> pizzas;
-	private List<Boisson> boissons;*/
-	private String menu;
-	private String pizza;
-	private String boisson;
+	//private List<Menu> menus;
+	//private List<Pizza> pizzas;
+	//private List<Boisson> boissons;
+	private String menu = "placeholder menu";
+	private String pizza = "placeholder pizza";
+	private String boisson = "placeholder boisson";
 	
 	public Commande() {
 		
 	}
-	
+	public Commande (Double price, Boolean toDeliver , String pizza, String boisson  ) {
+		this.price = price ;
+		this.toDeliver = toDeliver;
+		this.pizza = pizza;
+		this.boisson = boisson;
+		
+	}
 	public Commande(Integer id, Double price, Boolean isDelivered, Boolean toDeliver, String dateTime, String menu, String pizza, String boisson) {
 		this.id=id;
 		this.price=price;

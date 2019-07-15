@@ -1,5 +1,7 @@
 package ldnr.miam_miam.model;
 
+import java.util.List;
+
 import javax.persistence.Entity;
 
 //import java.util.List;

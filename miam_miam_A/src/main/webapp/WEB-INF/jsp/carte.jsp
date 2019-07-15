@@ -26,12 +26,20 @@
 					<td>${pizza.name}</td>
 					<td>${pizza.size}</td>
 					<td>${pizza.price}</td>
+					<td>
+						<form action="commander_pizza">
+							<input type="hidden" name="pizza_name" value="${pizza.name}">
+							<input type="hidden" name="pizza_price" value="${pizza.price }">
+							<input type="submit" value="Commander">
+						</form>
+					</td>
 				</tr>
 			</c:forEach>
 		</table>
-	</div><br>
-	
-		<h1>Boissons</h1>
+	</div>
+	<br>
+
+	<h1>Boissons</h1>
 
 	<br />
 	<br />
@@ -45,6 +53,13 @@
 				<tr>
 					<td>${boisson.name}</td>
 					<td>${boisson.price}</td>
+										<td>
+						<form action="commander_boisson">
+							<input type="hidden" name="boisson_name" value="${boisson.name}">
+							<input type="hidden" name="boisson_price" value="${boisson.price }">
+							<input type="submit" value="Commander">
+						</form>
+					</td>
 				</tr>
 			</c:forEach>
 		</table>

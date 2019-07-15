@@ -25,13 +25,13 @@ public class AjouterController {
 	}
 
 	@RequestMapping(value = { "/persistence_boisson" }, method = RequestMethod.GET)
-	public String persistenceBoisson(@ModelAttribute("nouvelleBoisson") Boisson nouvelleBoisson,Model model) {
+	public String persistenceBoisson(@ModelAttribute Boisson boisson,Model model) {
 	
-		model.addAttribute("boissonName",nouvelleBoisson.getName());
-		model.addAttribute("price",nouvelleBoisson.getPrice());
+		model.addAttribute("boissonName",boisson.getName());
+		model.addAttribute("price",boisson.getPrice());
 		//model.addAttribute("id",nouvelleBoisson.getId());
-		boissonRepo.save(nouvelleBoisson);
+		boissonRepo.save(boisson);
 		
-		return "redirect:ajouter_modifier_supprimer";
+		return "redirect:/ajouter_modifier_supprimer";
 	}
 }
